@@ -156,10 +156,6 @@ align-items: center;
     background-color: #f7f7f7;
 }
 
-.page-2 .ele .box-animation:hover{
-    height: 200px;
-    margin-top: -6px;
-}
 
 .page-2 .ele .box-animation .text{
     display: flex;
