@@ -89,6 +89,7 @@ gsap.to(".nav-part-2 .links",{
     }
 });
 }
+navbar();
 
 function loadinganimation(){
 
@@ -123,11 +124,11 @@ document.querySelectorAll(".child").forEach(function(elem){
         transform:'translate(-50%,-50%) scale(1)',
     })
     })
-    // elem.addEventListener("mouseleave",function(){
-    //         gsap.to(".cursor",{
-    //     transform:'translate(-50%,-50%) scale(0)',
-    // })
-    // })
+    elem.addEventListener("mouseleave",function(){
+            gsap.to(".cursor",{
+        transform:'translate(-50%,-50%) scale(0)',
+    })
+    })
 })
 };
 cursor();
