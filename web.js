@@ -30,7 +30,6 @@ ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 // after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
 ScrollTrigger.refresh();
 }
-
 locomotiveanimation();
 
 function videocaonanimation(){
@@ -62,10 +61,10 @@ video.addEventListener("mousemove",function(dets){
     })
 });
 }
-
 videocaonanimation();
 
 
+function navbar(){
 gsap.to(".nav-part-1 img",{
     transform:"translateY(-100%)",
     scrollTrigger:{
@@ -90,6 +89,8 @@ gsap.to(".nav-part-2 .links",{
         scrub:true
     }
 });
+}
+navbar();
 
 function loadinganimation(){
 
@@ -132,3 +133,5 @@ document.querySelectorAll(".child").forEach(function(elem){
 })
 };
 cursor();
+
+
