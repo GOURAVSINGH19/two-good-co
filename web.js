@@ -140,17 +140,18 @@ cursor();
 // function randomcolor() {
 //     return Math.floor(Math.random() * 255);
 // }
-// divElem.addEventListener('click', () => {
-//     divElem.style.backgroundColor = 'rgba('
-//         + randomcolor() + ',' + randomcolor()
-//         + ',' + randomcolor() + '\)'
-// })
 
-function bgcolor(){
+const divElem=function bgcolor(){
     const red=Math.floor(Math.random()*256);
     const blue=Math.floor(Math.random()*256);
     const green=Math.floor(Math.random()*256);
 }
 
- const change=document.body.style.backgroundColor="rgb("+red+ " ,"+ green+ ","+blue +")";
- console.log("this is change");
+divElem.addEventListener('click', () => {
+    // divElem.style.backgroundColor = 'rgba('
+    //     + randomcolor() + ',' + randomcolor()
+    //     + ',' + randomcolor() + '\)'
+
+    divElem.style.backgroundColor="red";
+})
+//  const change=document.body.style.backgroundColor="rgb("+red+ " ,"+ green+ ","+blue +")";
