@@ -61,6 +61,11 @@ body{
      cursor: pointer;
 }
 
+.nav-part-2 .icon  button{
+    border: none;
+    background-color: #f7f7f7;
+}
+
 .icon{
     padding: 10px;
     border-radius: 50px;
