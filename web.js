@@ -122,6 +122,7 @@ document.querySelectorAll(".child").forEach(function(elem){
     elem.addEventListener("mouseover",function(){
             gsap.to(".cursor",{
         transform:'translate(-50%,-50%) scale(1)',
+        color:"blue"
     })
     })
     elem.addEventListener("mouseleave",function(){
@@ -132,3 +133,24 @@ document.querySelectorAll(".child").forEach(function(elem){
 })
 };
 cursor();
+
+function changeingcolor(){
+const randomcolor=function(){
+    const hex="0123456789ABCDEF"
+    let color="#";
+    for(let i=0;i<6;i++){
+        color+=hex[Math.floor(Math.random()*16)];
+    }
+    return color;
+}
+
+const links=document.querySelector("#links");
+const body=document.querySelector("body");
+const btn=document.querySelector("#btn").addEventListener('click',(btn)=>{
+        body.style.backgroundColor=randomcolor();
+        if(randomcolor()==='#0000'){
+            links.style.color="white";
+        }
+});
+}
+changeingcolor();
